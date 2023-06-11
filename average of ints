@@ -1,0 +1,20 @@
+spusteni_programu = input("Můžeme začít? Ano/Ne:")
+
+if spusteni_programu == "Ano":
+    print("Do 1. otázky napiš kolik čísel chceš zprůměrovat. Pak už jenom vpiš dané čísla.")
+else:
+    print("Přijď pozdějí")
+    exit()
+
+pocet_cisel = input("Kolik cisel chces zprumerovat?")
+pocet_cisel = int(pocet_cisel)
+
+cisla = []
+#cisla = cisla, z kterych udelame prumer
+
+for n in range(pocet_cisel):
+    cisla.append(int(input("Napis cislo")))
+
+print(cisla)
+
+print(sum(cisla) / pocet_cisel)
