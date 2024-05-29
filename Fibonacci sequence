@@ -1,0 +1,12 @@
+fibonacci_sequence = [0, 1]
+z = 0
+poradi = 0
+
+while poradi < 1:
+    poradi = int(input("Zadej kolikate cislo Fibonacciho seqence chces vedet:"))
+
+for i in range(poradi):
+    z = fibonacci_sequence[-1] + fibonacci_sequence[-2]
+    fibonacci_sequence.append(z)
+
+print(fibonacci_sequence[poradi - 1])
